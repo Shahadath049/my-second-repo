@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+       <div class="container">
+        <img src="images/logo.png" alt="This is the logo" class="logo">
+        <div class="header-text">
+            <h1>The purpose is to <br> teach, bring learning to people.</h1>
+            <span class="square"></span>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,.</p>
+            <button class="common-btn">Read more</button>
+            <div class="line">
+                <span class="line1"></span><br>
+                <span class="line2"></span><br>
+                <span class="line3"></span>
+            </div>
+        </div>
+       </div>
+
+    </section>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">SERVICES</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" alt="" id="menubtn">
+        <script>
+            var menubtn = document.getElementById("menubtn");
+            var navigation = document.getElementById("navigation");
+            navigation.style.right = "-250px";
+            menubtn.onclick = function () {
+                if(navigation.style.right == "-250px") {
+                    navigation.style.right = "0";
+                }
+                else{
+                    navigation.style.right = "-250px";
+                }
+            }
+        </script>
+</body>
+</html>
